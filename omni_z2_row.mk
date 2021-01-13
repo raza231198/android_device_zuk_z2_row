@@ -17,13 +17,15 @@
 # Release name
 PRODUCT_RELEASE_NAME := z2_row
 
-$(call inherit-product, build/target/product/embedded.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8996
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/zuk/z2_row/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_z2_row

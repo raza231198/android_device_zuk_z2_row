@@ -90,3 +90,4 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_MTP := true
 TW_IGNORE_MISC_WIPE_DATA := true
+TARGET_RECOVERY_FSTAB := device/zuk/z2_row/recovery/root/etc/twrp.fstab

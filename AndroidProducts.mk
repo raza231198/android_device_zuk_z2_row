@@ -16,3 +16,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_z2_row.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_z2_row-eng
